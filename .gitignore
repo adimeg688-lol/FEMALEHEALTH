@@ -1,0 +1,5 @@
+node_modules/
+films/*/out/frames/
+films/*/out/review/
+films/*/out/review.prev/
+.claude/skills/fable-video-maker/kit/package*.json

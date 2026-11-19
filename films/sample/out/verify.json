@@ -1,0 +1,50 @@
+{
+  "file": "out/film.mp4",
+  "rows": [
+    {
+      "level": "ok",
+      "name": "size",
+      "detail": "1080x1920"
+    },
+    {
+      "level": "ok",
+      "name": "frames a second",
+      "detail": "30.00"
+    },
+    {
+      "level": "ok",
+      "name": "format",
+      "detail": "h264 yuv420p (phones want h264 yuv420p)"
+    },
+    {
+      "level": "note",
+      "name": "length",
+      "detail": "6.000 s (nothing to compare it with: pass --duration)"
+    },
+    {
+      "level": "ok",
+      "name": "fast start",
+      "detail": "the index is at the front"
+    },
+    {
+      "level": "FAIL",
+      "name": "loudness",
+      "detail": "-70 LUFS: the track is silent. If that is meant, pass --silent"
+    },
+    {
+      "level": "ok",
+      "name": "frame 0",
+      "detail": "not black"
+    },
+    {
+      "level": "note",
+      "name": "the picture jumps",
+      "detail": "nowhere (no hard cuts)"
+    },
+    {
+      "level": "ok",
+      "name": "file size",
+      "detail": "4.4 MB"
+    }
+  ]
+}
