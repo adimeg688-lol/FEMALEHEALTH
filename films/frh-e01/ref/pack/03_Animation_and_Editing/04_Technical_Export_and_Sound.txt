@@ -1,0 +1,21 @@
+FRH E01 — TECHNICAL DELIVERY & EDITING
+
+MASTER: 1080 × 1920 pixels, 9:16 portrait, 45 seconds maximum; 30 fps constant frame rate, progressive, square pixels. Original generated PNGs: 941 × 1672 each (approximately 9:16). Scale to fill the timeline, with a negligible crop if necessary; do not stretch. They are not native 1080p assets.
+EXPORT: MP4, H.264 High Profile, Rec.709 SDR, 12–20 Mbps target video bitrate; AAC-LC stereo, 48 kHz, 256–320 kbps. These are recommended editor settings, not platform maximums. Export a captioned version and a clean version, plus corrected SRT. Check on an actual phone before posting.
+
+VISUAL STYLE: abstract, surreal, poetic moving fine art; a single faceless female archetype, not a realistic medical film. Keep painted edges and texture; restrained parallax, drifting fragments and shape match cuts. Preserve all risk captions long enough to read. No miracle-cure before/after imagery.
+PALETTE: deep plum #322A37; dusty rose #A95C65; terracotta #D6A38C; warm ivory #F3E9DB; sage #81978A; antique gold #D9B78D. Start dark; introduce warmth gradually. Sage is optional accent.
+TYPE: elegant serif for titles (e.g. Cormorant Garamond or Georgia), clean sans-serif for captions (e.g. Inter or Arial). Use licensed fonts; none are included. Caption target 58–70 px at 1080 × 1920; two lines max, sentence case, ivory on dark translucent backing or soft outline. Avoid rapidly flashing words. Keep important graphics inside a conservative safe area: x=100–870, y=220–1480; exact overlays vary by platform and device. Preview in the platform app.
+TITLE: Where Did I Go? (first seconds only if it does not compete with the captions). End card: dark plum #322A37, ivory line “Menopause doesn’t mean losing yourself.” and antique-gold FRH / FEMALE REPRODUCTIVE HEALTH. Keep end card at 43–45s; if needed, use the last illustrated frame with a dark overlay. No unapproved logo assets; FRH wordmark is a provisional text treatment.
+
+AUDIO: intimate piano, airy ambient strings, restrained sound design; no lyrics. Suggested original/licensed music prompt: “45-second instrumental cinematic ambient score, sparse felt piano and soft sustained strings, introspective beginning, gentle warmth near end, no dramatic climax, no vocals, no overpowering percussion, room for a spoken voice.” Music should not imply a treatment miracle. Subtle shard/paper/petal sounds only. Start with voice prominent, music approximately 15–20 dB below voice; aim near -14 to -16 LUFS integrated and <= -1 dBTP for final mix (editor targets, not mandatory platform specs). Use properly licensed audio.
+
+EDIT ORDER
+1. Import original PNGs, create 1080 × 1920 / 30 fps sequence.
+2. Generate and approve voice take first. Mark sentence beats and confirm <=43s or re-time the storyboard; do not cut medical risk language.
+3. Generate animated clips from prompts, match the voice beats and transitions.
+4. Add captions (draft SRT supplied; align to recorded voice), HRT title and closing FRH text.
+5. Add licensed music and SFX, mix under voice, review on phone.
+6. Obtain clinical review and check all claims/captions; export and QC.
+
+QC: no clipping, awkward crops, unreadable captions, AI morphing, inaccurate anatomy presented as fact, mispronunciations, risk omissions, abrupt audio or unlicensed content. Confirm duration, resolution, audio and subtitle sync. Verify current platform upload requirements at publication.

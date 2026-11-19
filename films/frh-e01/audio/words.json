@@ -1,0 +1,512 @@
+[
+ {
+  "w": "Do",
+  "s": 0.4,
+  "e": 0.551,
+  "speaker": "narrator"
+ },
+ {
+  "w": "you",
+  "s": 0.609,
+  "e": 0.69,
+  "speaker": "narrator"
+ },
+ {
+  "w": "ever",
+  "s": 0.783,
+  "e": 1.027,
+  "speaker": "narrator"
+ },
+ {
+  "w": "look",
+  "s": 1.097,
+  "e": 1.259,
+  "speaker": "narrator"
+ },
+ {
+  "w": "in",
+  "s": 1.306,
+  "e": 1.364,
+  "speaker": "narrator"
+ },
+ {
+  "w": "the",
+  "s": 1.398,
+  "e": 1.468,
+  "speaker": "narrator"
+ },
+ {
+  "w": "mirror",
+  "s": 1.515,
+  "e": 1.793,
+  "speaker": "narrator"
+ },
+ {
+  "w": "and",
+  "s": 1.863,
+  "e": 1.979,
+  "speaker": "narrator"
+ },
+ {
+  "w": "wonder…",
+  "s": 2.049,
+  "e": 2.618,
+  "speaker": "narrator"
+ },
+ {
+  "w": "Where",
+  "s": 2.896,
+  "e": 3.152,
+  "speaker": "narrator"
+ },
+ {
+  "w": "did",
+  "s": 3.186,
+  "e": 3.326,
+  "speaker": "narrator"
+ },
+ {
+  "w": "I",
+  "s": 3.372,
+  "e": 3.395,
+  "speaker": "narrator"
+ },
+ {
+  "w": "go?",
+  "s": 3.488,
+  "e": 3.918,
+  "speaker": "narrator"
+ },
+ {
+  "w": "Your",
+  "s": 4.196,
+  "e": 4.382,
+  "speaker": "narrator"
+ },
+ {
+  "w": "memory.",
+  "s": 4.452,
+  "e": 4.94,
+  "speaker": "narrator"
+ },
+ {
+  "w": "Your",
+  "s": 5.056,
+  "e": 5.241,
+  "speaker": "narrator"
+ },
+ {
+  "w": "confidence.",
+  "s": 5.299,
+  "e": 6.054,
+  "speaker": "narrator"
+ },
+ {
+  "w": "Your",
+  "s": 6.228,
+  "e": 6.402,
+  "speaker": "narrator"
+ },
+ {
+  "w": "desire.",
+  "s": 6.46,
+  "e": 7.099,
+  "speaker": "narrator"
+ },
+ {
+  "w": "Even",
+  "s": 7.424,
+  "e": 7.679,
+  "speaker": "narrator"
+ },
+ {
+  "w": "your",
+  "s": 7.738,
+  "e": 7.865,
+  "speaker": "narrator"
+ },
+ {
+  "w": "body",
+  "s": 7.923,
+  "e": 8.248,
+  "speaker": "narrator"
+ },
+ {
+  "w": "feels",
+  "s": 8.341,
+  "e": 8.748,
+  "speaker": "narrator"
+ },
+ {
+  "w": "unfamiliar.",
+  "s": 8.875,
+  "e": 9.781,
+  "speaker": "narrator"
+ },
+ {
+  "w": "Menopause",
+  "s": 10.385,
+  "e": 10.977,
+  "speaker": "narrator"
+ },
+ {
+  "w": "could",
+  "s": 11.012,
+  "e": 11.174,
+  "speaker": "narrator"
+ },
+ {
+  "w": "be",
+  "s": 11.209,
+  "e": 11.302,
+  "speaker": "narrator"
+ },
+ {
+  "w": "part",
+  "s": 11.36,
+  "e": 11.557,
+  "speaker": "narrator"
+ },
+ {
+  "w": "of",
+  "s": 11.604,
+  "e": 11.65,
+  "speaker": "narrator"
+ },
+ {
+  "w": "the",
+  "s": 11.697,
+  "e": 11.766,
+  "speaker": "narrator"
+ },
+ {
+  "w": "reason.",
+  "s": 11.836,
+  "e": 12.37,
+  "speaker": "narrator"
+ },
+ {
+  "w": "Hormone",
+  "s": 12.695,
+  "e": 13.241,
+  "speaker": "narrator"
+ },
+ {
+  "w": "replacement",
+  "s": 13.287,
+  "e": 13.879,
+  "speaker": "narrator"
+ },
+ {
+  "w": "therapy,",
+  "s": 13.914,
+  "e": 14.599,
+  "speaker": "narrator"
+ },
+ {
+  "w": "or",
+  "s": 14.773,
+  "e": 14.947,
+  "speaker": "narrator"
+ },
+ {
+  "w": "HRT,",
+  "s": 15.063,
+  "e": 16.015,
+  "speaker": "narrator"
+ },
+ {
+  "w": "can",
+  "s": 16.166,
+  "e": 16.34,
+  "speaker": "narrator"
+ },
+ {
+  "w": "improve",
+  "s": 16.387,
+  "e": 16.793,
+  "speaker": "narrator"
+ },
+ {
+  "w": "sleep,",
+  "s": 16.839,
+  "e": 17.339,
+  "speaker": "narrator"
+ },
+ {
+  "w": "ease",
+  "s": 17.664,
+  "e": 18.012,
+  "speaker": "narrator"
+ },
+ {
+  "w": "hot",
+  "s": 18.058,
+  "e": 18.244,
+  "speaker": "narrator"
+ },
+ {
+  "w": "flashes,",
+  "s": 18.314,
+  "e": 18.999,
+  "speaker": "narrator"
+ },
+ {
+  "w": "vaginal",
+  "s": 19.243,
+  "e": 19.742,
+  "speaker": "narrator"
+ },
+ {
+  "w": "dryness",
+  "s": 19.8,
+  "e": 20.288,
+  "speaker": "narrator"
+ },
+ {
+  "w": "and",
+  "s": 20.346,
+  "e": 20.497,
+  "speaker": "narrator"
+ },
+ {
+  "w": "menopause-related",
+  "s": 20.589,
+  "e": 21.692,
+  "speaker": "narrator"
+ },
+ {
+  "w": "low",
+  "s": 21.785,
+  "e": 22.017,
+  "speaker": "narrator"
+ },
+ {
+  "w": "mood.",
+  "s": 22.099,
+  "e": 22.621,
+  "speaker": "narrator"
+ },
+ {
+  "w": "Side",
+  "s": 23.225,
+  "e": 23.55,
+  "speaker": "narrator"
+ },
+ {
+  "w": "effects",
+  "s": 23.573,
+  "e": 23.922,
+  "speaker": "narrator"
+ },
+ {
+  "w": "include",
+  "s": 23.98,
+  "e": 24.374,
+  "speaker": "narrator"
+ },
+ {
+  "w": "headaches",
+  "s": 24.432,
+  "e": 24.85,
+  "speaker": "narrator"
+ },
+ {
+  "w": "and",
+  "s": 24.908,
+  "e": 25.013,
+  "speaker": "narrator"
+ },
+ {
+  "w": "spotting.",
+  "s": 25.083,
+  "e": 25.651,
+  "speaker": "narrator"
+ },
+ {
+  "w": "Some",
+  "s": 26.255,
+  "e": 26.522,
+  "speaker": "narrator"
+ },
+ {
+  "w": "treatments",
+  "s": 26.557,
+  "e": 27.033,
+  "speaker": "narrator"
+ },
+ {
+  "w": "increase",
+  "s": 27.114,
+  "e": 27.532,
+  "speaker": "narrator"
+ },
+ {
+  "w": "blood",
+  "s": 27.59,
+  "e": 27.834,
+  "speaker": "narrator"
+ },
+ {
+  "w": "clot",
+  "s": 27.881,
+  "e": 28.194,
+  "speaker": "narrator"
+ },
+ {
+  "w": "or",
+  "s": 28.275,
+  "e": 28.449,
+  "speaker": "narrator"
+ },
+ {
+  "w": "breast",
+  "s": 28.519,
+  "e": 28.786,
+  "speaker": "narrator"
+ },
+ {
+  "w": "cancer",
+  "s": 28.833,
+  "e": 29.216,
+  "speaker": "narrator"
+ },
+ {
+  "w": "risk.",
+  "s": 29.285,
+  "e": 29.75,
+  "speaker": "narrator"
+ },
+ {
+  "w": "But",
+  "s": 30.261,
+  "e": 30.458,
+  "speaker": "narrator"
+ },
+ {
+  "w": "decades",
+  "s": 30.528,
+  "e": 31.027,
+  "speaker": "narrator"
+ },
+ {
+  "w": "of",
+  "s": 31.073,
+  "e": 31.143,
+  "speaker": "narrator"
+ },
+ {
+  "w": "fear",
+  "s": 31.224,
+  "e": 31.503,
+  "speaker": "narrator"
+ },
+ {
+  "w": "shouldn’t",
+  "s": 31.572,
+  "e": 31.909,
+  "speaker": "narrator"
+ },
+ {
+  "w": "silence",
+  "s": 31.979,
+  "e": 32.525,
+  "speaker": "narrator"
+ },
+ {
+  "w": "today’s",
+  "s": 32.571,
+  "e": 32.943,
+  "speaker": "narrator"
+ },
+ {
+  "w": "conversations.",
+  "s": 32.989,
+  "e": 34.023,
+  "speaker": "narrator"
+ },
+ {
+  "w": "Ask",
+  "s": 34.719,
+  "e": 35.033,
+  "speaker": "narrator"
+ },
+ {
+  "w": "your",
+  "s": 35.091,
+  "e": 35.218,
+  "speaker": "narrator"
+ },
+ {
+  "w": "doctor",
+  "s": 35.276,
+  "e": 35.694,
+  "speaker": "narrator"
+ },
+ {
+  "w": "whether",
+  "s": 35.938,
+  "e": 36.275,
+  "speaker": "narrator"
+ },
+ {
+  "w": "HRT",
+  "s": 36.368,
+  "e": 37.03,
+  "speaker": "narrator"
+ },
+ {
+  "w": "is",
+  "s": 37.273,
+  "e": 37.424,
+  "speaker": "narrator"
+ },
+ {
+  "w": "right",
+  "s": 37.494,
+  "e": 37.68,
+  "speaker": "narrator"
+ },
+ {
+  "w": "for",
+  "s": 37.726,
+  "e": 37.831,
+  "speaker": "narrator"
+ },
+ {
+  "w": "you.",
+  "s": 37.889,
+  "e": 38.191,
+  "speaker": "narrator"
+ },
+ {
+  "w": "Menopause",
+  "s": 38.887,
+  "e": 39.433,
+  "speaker": "narrator"
+ },
+ {
+  "w": "doesn’t",
+  "s": 39.468,
+  "e": 39.746,
+  "speaker": "narrator"
+ },
+ {
+  "w": "mean",
+  "s": 39.793,
+  "e": 40.002,
+  "speaker": "narrator"
+ },
+ {
+  "w": "losing",
+  "s": 40.095,
+  "e": 40.408,
+  "speaker": "narrator"
+ },
+ {
+  "w": "yourself.",
+  "s": 40.466,
+  "e": 41.314,
+  "speaker": "narrator"
+ }
+]

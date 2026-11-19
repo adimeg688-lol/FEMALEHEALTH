@@ -1,0 +1,11 @@
+FRH | EPISODE 01 — WHERE DID I GO?
+Production handoff / v1.0 / 19 November 2026
+
+OPEN Production_Guide.pdf FIRST for the visual storyboard, creative direction and editor handoff.
+
+01_Script_and_Voice — approved 85-word narration and ElevenLabs voice design/settings.
+02_Master_Images — five original full-resolution PNGs in correct chronological order.
+03_Animation_and_Editing — copy-ready animation prompts, timeline CSV, draft SRT, technical export and sound instructions.
+04_Publishing_and_Review — social caption, cover direction and medical sources/review notes.
+
+STATUS: Script and creative direction approved in chat. Five still images supplied. Animations, voice recording, music, final video, finished cover and logo are NOT included. Timings are provisional until a voice is selected and generated. Final clinical review is needed. All technical settings and music choices are production recommendations; they may be adjusted. Source images are 941 × 1672, intended for a 1080 × 1920 output.

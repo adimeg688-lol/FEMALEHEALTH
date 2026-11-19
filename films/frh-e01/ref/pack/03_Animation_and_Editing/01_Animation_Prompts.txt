@@ -1,0 +1,28 @@
+GLOBAL IMAGE-TO-VIDEO DIRECTION
+Vertical 9:16 cinematic moving oil painting. Preserve the supplied image composition, faceless mature feminine silhouette, thick impasto texture, plum/terracotta/ivory palette and delicate gold accents. Subtle organic motion, layered depth, restrained camera movement. No lip-sync, realistic face generation, extra limbs, flicker, melting anatomy, abrupt camera spins, new objects, text or watermarks. Avoid stock-style zoom-only motion. Keep motion calm enough for captions. Each image is an original AI-generated still, not a real patient or clinical diagram.
+
+Generate each shot separately in the image-to-video tool of your choice. Use the matching PNG as the starting image. Where supported, use a next-scene frame as an end-frame reference. If duration limits apply, generate shorter segments and join with a controlled dissolve or match cut. Keep the narration as the timing master. Do not rely on the model to render lettering.
+SCENE 01 | Where did I go? | 00:00–00:06
+INPUT: 01_Fractured_Mirror.png
+PROMPT: Slow push toward the gold-rimmed mirror. A few existing shards drift outward; the reflection remains faceless. Fine brushstroke texture stays intact. Maintain the original painterly texture and silhouette.
+TRANSITION: Match-cut from a floating shard into a drifting memory fragment.
+
+SCENE 02 | Losing herself | 00:06–00:13
+INPUT: 02_Disappearing_Memories.png
+PROMPT: Memory fragments float away; the gold threads gently unravel, petals drift, and fog moves across the silhouette. Avoid exaggerated body changes. Maintain the original painterly texture and silhouette.
+TRANSITION: A thread stretches into a flowing ribbon of light.
+
+SCENE 03 | Understanding her hormones | 00:13–00:25
+INPUT: 03_Hormone_Ribbons.png
+PROMPT: Glowing ribbons and small particles travel gently through the composition. Hold the anatomy stable; no literal biological simulation. Add HRT as editor-applied typography. Maintain the original painterly texture and silhouette.
+TRANSITION: Golden ribbon becomes the curved beam of a balance scale.
+
+SCENE 04 | Breaking the silence | 00:25–00:36
+INPUT: 04_Benefits_and_Risks.png
+PROMPT: Paper fragments drift around the figure and the scales gently sway without tipping decisively. Do not fabricate readable historical headlines. Maintain the original painterly texture and silhouette.
+TRANSITION: A paper fragment dissolves into a warm petal.
+
+SCENE 05 | Hope | 00:36–00:45
+INPUT: 05_Hope.png
+PROMPT: Petals unfold softly, warm light expands and the figure holds an open posture. No rejuvenation, body transformation or guaranteed cure imagery. Maintain the original painterly texture and silhouette.
+TRANSITION: Hold or dissolve to a short FRH end card; aim for a replay-friendly cut.

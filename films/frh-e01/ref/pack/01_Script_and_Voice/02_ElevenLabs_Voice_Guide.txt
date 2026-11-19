@@ -1,0 +1,26 @@
+ELEVENLABS — VOICE DESIGN PROMPT
+
+A warm, mature female narrator in her forties or fifties with a neutral international English accent. Intimate, emotionally intelligent and naturally expressive. A soft but confident mid-register voice with subtle texture and controlled emotion. Conversational rather than theatrical, with crisp articulation and an unhurried sense of authority. She sounds like an experienced woman sharing something important with another woman. Avoid commercial advertising delivery, exaggerated sympathy, whispering and excessive breathiness. Clean studio-quality recording.
+
+WORKFLOW
+1. In ElevenLabs, audition a suitable licensed voice or use Voice Design with the prompt above. Use a voice you have permission to use commercially; do not clone someone without consent.
+2. Paste 01_Approved_Voiceover.txt into Text to Speech. Audition 2–3 takes. For a more natural pause, keep the paragraph breaks; do not paste the direction notes into the spoken text.
+3. Starting settings where supported: stability 50%, similarity 75%, style exaggeration 0%, speed 1.0. Adjust stability around 45–60% to balance emotion with clarity. Model-specific sliders differ; Eleven v3/v4 do not have speed control, and v4 has no style slider. Use available controls only. Treat these as starting values, not guarantees.
+4. Speak HRT as separate letters (H–R–T). If it mispronounces the abbreviation, replace HRT with H R T in the TTS input only. Keep HRT in subtitles.
+5. Target 42–43 seconds of narration (85 words, about 119–121 words/min including pauses). The full master is 45 seconds. If longer, regenerate with slightly faster natural delivery or trim silence; do not rush the risk disclosure. Adjust the visual timeline and subtitles to the chosen take.
+6. Export highest-quality WAV/PCM if available; otherwise high-quality MP3. In the editor, use a 48 kHz project and save the final mix separately. Name the raw selected take FRH_E01_VO_take01.wav (or .mp3).
+
+PERFORMANCE MAP
+00–06: intimate, questioning; pause briefly before “Where did I go?”
+06–13: gently emphatic on memory, confidence and desire; avoid melodrama.
+13–25: calm, factual, clear; pronounce hormone replacement therapy fully.
+25–36: measured and equally clear on risks; firm but not alarmist on fear.
+36–43: warm agency, not a sales pitch. Let the final line breathe.
+43–45: music tail/end card; no extra spoken copy.
+
+Official docs:
+https://elevenlabs.io/docs/eleven-creative/voices/voice-design
+https://elevenlabs.io/docs/eleven-creative/playground/text-to-speech
+https://elevenlabs.io/docs/overview/capabilities/text-to-speech/best-practices
+
+Status: direction and text only. No voice has been selected, generated or timed in ElevenLabs.
