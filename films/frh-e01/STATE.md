@@ -6,6 +6,6 @@
 - [x] Score: score.mjs → audio/music.wav · mix: node kit/mix.mjs --duration 45 --voice audio/voice.wav --music audio/music.wav --music-db -20 → audio/mix.wav (−16 LUFS, −1.5 dBTP). AUDIO FROZEN.
 - [x] film.js: same-frame check passes, 0.35 s a frame.
 - [x] Stills: pass 1, then one repaint (paper fragments, shard spread, end card). Caption boundaries checked with --at.
-- [ ] Full capture (captioned) → out/FRH_E01_captioned.mp4
+- [x] Full capture (captioned): master 421 MB kept locally (out/master, not in git); delivery out/FRH_E01_captioned_14M.mp4 (14 Mbps, AAC 320k, 79.7 MB), verify passes.
 - [ ] Clean capture (echo '{"captions":false}' > variant.json) → out/FRH_E01_clean.mp4, then rm variant.json
 - [ ] verify both
