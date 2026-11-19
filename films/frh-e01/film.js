@@ -31,34 +31,34 @@ const fract = (x) => x - Math.floor(x);
 function plate(w, h, draw) { const c = new OffscreenCanvas(w, h); draw(c.getContext("2d"), w, h); return c; }
 
 // ── The timeline (from audio/words.json: the voice starts at 0.4 s) ─────────
-const CUTS = [4.05, 10.2, 23.05, 34.5];
-const END_CARD = 42.2;
+const CUTS = [4.7, 11.0, 23.45, 33.95];
+const END_CARD = 41.6;
 const SHOTS = [
-  { id: "s01-mirror", start: 0, end: 4.05, also: [0, 2.95, 3.95], img: 0 },
-  { id: "s02-memories", start: 4.05, end: 10.2, also: [4.2, 7.5, 10.0], img: 1 },
-  { id: "s03-ribbons", start: 10.2, end: 23.05, also: [10.4, 15.6, 19.5, 22.9], img: 2 },
-  { id: "s04-balance", start: 23.05, end: 34.5, also: [23.2, 27.6, 31.6, 34.3], img: 3 },
-  { id: "s05-hope", start: 34.5, end: END_CARD, also: [34.7, 38.2, 41.0], img: 4 },
-  { id: "s06-endcard", start: END_CARD, end: DURATION, also: [42.6, 44.95], img: 4 },
+  { id: "s01-mirror", start: 0, end: 4.7, also: [0, 3.3, 4.5], img: 0 },
+  { id: "s02-memories", start: 4.7, end: 11.0, also: [4.85, 8.6, 10.8], img: 1 },
+  { id: "s03-ribbons", start: 11.0, end: 23.45, also: [11.2, 16.4, 20.2, 23.3], img: 2 },
+  { id: "s04-balance", start: 23.45, end: 33.95, also: [23.6, 28.2, 32.0, 33.8], img: 3 },
+  { id: "s05-hope", start: 33.95, end: END_CARD, also: [34.1, 37.0, 39.5], img: 4 },
+  { id: "s06-endcard", start: END_CARD, end: DURATION, also: [42.0, 44.95], img: 4 },
 ];
 const XF = 0.28;   // half the dissolve at each cut (0.56 s, 17 frames)
 // How each painting moves. focal: where the push-in heads (image fractions). zoom: from → to.
 // regions: local motion in the shader. mode 0 flow, 1 vertical sway, 2 tilt (a beam about its centre).
 const LOOKS = [
-  { file: "img/01_Fractured_Mirror.png", focal: [0.66, 0.24], zoom: [1.025, 1.075], s: 0, e: 4.05 + XF,
+  { file: "img/01_Fractured_Mirror.png", focal: [0.66, 0.24], zoom: [1.025, 1.075], s: 0, e: 4.7 + XF,
     breathe: 2.2, glow: 0.10, fog: 0.0,
     regions: [[0.2, 0.75, 0.32, 4.0, 0, 0.9, 0.0, 0.4], [0.12, 0.2, 0.12, 2.2, 0, 0.7, 1.0, -1.2], [0.7, 0.45, 0.28, 2.0, 0, 0.6, 2.0, 0.3]] },
-  { file: "img/02_Disappearing_Memories.png", focal: [0.6, 0.3], zoom: [1.025, 1.07], s: 4.05 - XF, e: 10.2 + XF,
+  { file: "img/02_Disappearing_Memories.png", focal: [0.6, 0.3], zoom: [1.025, 1.07], s: 4.7 - XF, e: 11.0 + XF,
     breathe: 2.2, glow: 0.10, fog: 0.16,
     regions: [[0.7, 0.18, 0.2, 4.0, 0, 0.8, 0.0, 2.7], [0.5, 0.7, 0.35, 3.5, 0, 0.7, 1.5, 0.2], [0.82, 0.6, 0.12, 3.0, 1, 0.55, 0.5, 0]] },
-  { file: "img/03_Hormone_Ribbons.png", focal: [0.5, 0.45], zoom: [1.025, 1.085], s: 10.2 - XF, e: 23.05 + XF,
+  { file: "img/03_Hormone_Ribbons.png", focal: [0.5, 0.45], zoom: [1.025, 1.085], s: 11.0 - XF, e: 23.45 + XF,
     breathe: 2.4, glow: 0.42, fog: 0.0,
     regions: [[0.15, 0.25, 0.25, 4.5, 0, 0.6, 0.0, 2.4], [0.85, 0.4, 0.25, 4.0, 0, 0.55, 1.0, -0.8], [0.3, 0.85, 0.3, 4.0, 0, 0.6, 2.0, 0.6]] },
-  { file: "img/04_Benefits_and_Risks.png", focal: [0.5, 0.42], zoom: [1.025, 1.07], s: 23.05 - XF, e: 34.5 + XF,
+  { file: "img/04_Benefits_and_Risks.png", focal: [0.5, 0.42], zoom: [1.025, 1.07], s: 23.45 - XF, e: 33.95 + XF,
     breathe: 2.0, glow: 0.12, fog: 0.0,
     // the beam tilts a few pixels about the pivot and the pans rise and fall against each other: never tipping
     regions: [[0.5, 0.48, 0.24, 3.2, 2, 0.5, 0.0, 0], [0.32, 0.61, 0.1, 5.0, 1, 0.5, 0.0, 0], [0.66, 0.61, 0.1, -5.0, 1, 0.5, 0.0, 0], [0.5, 0.18, 0.2, 3.0, 0, 0.7, 1.0, 2.9]] },
-  { file: "img/05_Hope.png", focal: [0.55, 0.3], zoom: [1.025, 1.08], s: 34.5 - XF, e: DURATION,
+  { file: "img/05_Hope.png", focal: [0.55, 0.3], zoom: [1.025, 1.08], s: 33.95 - XF, e: DURATION,
     breathe: 2.4, glow: 0.32, fog: 0.0,
     regions: [[0.5, 0.15, 0.2, 4.0, 0, 0.6, 0.0, 0.3], [0.25, 0.8, 0.3, 4.5, 0, 0.55, 1.0, -0.5], [0.8, 0.45, 0.25, 3.5, 0, 0.6, 2.0, 2.0]] },
 ];
@@ -158,7 +158,7 @@ function drawPaintings(t) {
     const L = LOOKS[i];
     gl.bindTexture(gl.TEXTURE_2D, tex[i]); gl.uniform1i(U.img, 0);
     gl.uniform1f(U.t, t); gl.uniform1f(U.zoom, zoomAt(i, t)); gl.uniform1f(U.alpha, first ? 1 : w);
-    gl.uniform1f(U.breathe, L.breathe); gl.uniform1f(U.glow, L.glow * (i === 4 ? lerp(0.6, 1.3, smooth((t - 34.5) / 7)) : 1)); gl.uniform1f(U.fog, L.fog);
+    gl.uniform1f(U.breathe, L.breathe); gl.uniform1f(U.glow, L.glow * (i === 4 ? lerp(0.6, 1.3, smooth((t - 33.95) / 7)) : 1)); gl.uniform1f(U.fog, L.fog);
     gl.uniform1f(U.aspect, W / H); gl.uniform2f(U.focal, L.focal[0], L.focal[1]);
     const A = new Float32Array(16), B = new Float32Array(16);
     L.regions.forEach((r, k) => { A.set(r.slice(0, 4), k * 4); B.set(r.slice(4, 8), k * 4); });
@@ -318,7 +318,7 @@ function motes(t, al, warm = 1) {
 }
 function overS01(t, al) {      // shards drift out of the mirror, and speed off through the cut
   const c = toScreen(0, t, 0.7, 0.24);
-  const fly = smooth((t - 3.6) / 0.9) * (t - 3.6) * 0.22;
+  const fly = smooth((t - 4.25) / 0.9) * (t - 4.25) * 0.22;
   for (const s of SHARDS) {
     const rr = s.r0 + s.v * t + Math.max(0, fly) + 0.004 * Math.sin(t * 0.8 + s.ph);
     const x = c[0] + Math.cos(s.a) * rr * W * 1.2, y = c[1] + Math.sin(s.a) * rr * H * 0.75;
@@ -331,7 +331,7 @@ function overS01(t, al) {      // shards drift out of the mirror, and speed off 
   ctx.globalCompositeOperation = "source-over";
 }
 function overS02(t, al) {      // memories float away; threads unravel; petals drift up and left
-  const T = t - 4.05;
+  const T = t - 4.7;
   for (const f of FRAGS) {
     const x = (f.x - f.v * T * 0.6) * W, y = (f.y - f.v * T) * H;
     const fade = smooth(1 - T / (5.5 * f.d));
@@ -378,7 +378,7 @@ function overS04(t, al) {      // paper fragments: the old headlines, too soft t
   }
 }
 function overS05(t, al) {      // warm light opens from the upper right; petals rise and turn
-  const k = smooth((t - 34.3) / 7.5);
+  const k = smooth((t - 33.75) / 7.5);
   ctx.globalCompositeOperation = "screen";
   sprite(SPR.warm, 0.82 * W, 0.12 * H, 0, lerp(0.9, 2.0, k), al * lerp(0.18, 0.42, k));
   ctx.globalCompositeOperation = "source-over";
@@ -398,24 +398,24 @@ function joins(t) {
     for (let i = 0; i <= m; i++) { const [x, y] = pts(i / n); i ? ctx.lineTo(x, y) : ctx.moveTo(x, y); }
     ctx.stroke();
   };
-  // 10.2: a thread stretches into a flowing ribbon of light
-  { const k = smooth((t - 9.85) / 0.55), a = 0.75 * (1 - smooth((t - 10.25) / 0.45));
-    if (t > 9.85 && t < 10.75) arc(k, (u) => [lerp(0.15, 0.9, u) * W, (0.52 - 0.12 * Math.sin(u * 3.1)) * H + 30 * Math.sin(u * 7 + t)], 3, a); }
-  // 23.05: the golden ribbon becomes the curved beam of the balance
-  { const k = smooth((t - 22.65) / 0.55), a = 0.7 * (1 - smooth((t - 23.1) / 0.45));
-    if (t > 22.65 && t < 23.6) arc(k, (u) => [lerp(0.2, 0.8, u) * W, (0.5 - 0.05 * Math.sin(u * 3.14159)) * H], 4, a); }
+  // 11.0: a thread stretches into a flowing ribbon of light
+  { const k = smooth((t - 10.65) / 0.55), a = 0.75 * (1 - smooth((t - 11.05) / 0.45));
+    if (t > 10.65 && t < 11.55) arc(k, (u) => [lerp(0.15, 0.9, u) * W, (0.52 - 0.12 * Math.sin(u * 3.1)) * H + 30 * Math.sin(u * 7 + t)], 3, a); }
+  // 23.45: the golden ribbon becomes the curved beam of the balance
+  { const k = smooth((t - 23.05) / 0.55), a = 0.7 * (1 - smooth((t - 23.5) / 0.45));
+    if (t > 23.05 && t < 24.0) arc(k, (u) => [lerp(0.2, 0.8, u) * W, (0.5 - 0.05 * Math.sin(u * 3.14159)) * H], 4, a); }
   ctx.restore();
-  // 34.5: a paper fragment drifts across and warms into a petal
-  if (t > 33.9 && t < 35.2) {
-    const k = smooth((t - 33.9) / 1.3), x = lerp(0.25, 0.62, k) * W, y = lerp(0.62, 0.42, k) * H;
+  // 33.95: a paper fragment drifts across and warms into a petal
+  if (t > 33.35 && t < 34.65) {
+    const k = smooth((t - 33.35) / 1.3), x = lerp(0.25, 0.62, k) * W, y = lerp(0.62, 0.42, k) * H;
     sprite(PAPERS[5].spr, x, y, t * 0.6, 0.9, 0.85 * (1 - smooth((k - 0.3) / 0.4)));
-    sprite(PETALS5[6].spr, x, y, t * 0.6, 1.6, 0.9 * smooth((k - 0.3) / 0.4) * (1 - smooth((t - 34.9) / 0.3)));
+    sprite(PETALS5[6].spr, x, y, t * 0.6, 1.6, 0.9 * smooth((k - 0.3) / 0.4) * (1 - smooth((t - 34.35) / 0.3)));
   }
 }
 
 // ── Type ────────────────────────────────────────────────────────────────────
 const IVORY = "#f3e9db", GOLD = "#d9b78d", LIT = "#f0c98c", PLUM = "#322a37";
-function captionY(t) { return t >= 23.05 - 0.05 && t < 34.5 - 0.05 ? 1440 : 1240; }   // clear of the scales in s04
+function captionY(t) { return t >= 23.45 - 0.05 && t < 33.95 - 0.05 ? 1440 : 1240; }   // clear of the scales in s04
 function caption(t) {
   const line = CAPTIONS.find((l) => t >= l.s && t < l.e);
   if (!line || t >= END_CARD - 0.4) return;
@@ -442,7 +442,7 @@ function caption(t) {
 }
 function spaced(text, x, y, ls) { ctx.letterSpacing = `${ls}px`; ctx.fillText(text, x + ls / 2, y); ctx.letterSpacing = "0px"; }
 function title(t) {            // Where Did I Go? — on frame 0, gone before the second shot
-  const a = 1 - smooth((t - 3.3) / 0.6);
+  const a = 1 - smooth((t - 3.95) / 0.6);
   if (a <= 0) return;
   ctx.save(); ctx.globalAlpha = a; ctx.textAlign = "center";
   ctx.shadowColor = "rgba(20,12,24,0.75)"; ctx.shadowBlur = 24;
@@ -451,9 +451,9 @@ function title(t) {            // Where Did I Go? — on frame 0, gone before th
   ctx.restore();
 }
 function hrtType(t) {          // HRT, set by the editor, while she names it
-  const a = smooth((t - 14.85) / 0.5) * (1 - smooth((t - 19.9) / 0.6));
+  const a = smooth((t - 15.6) / 0.5) * (1 - smooth((t - 20.6) / 0.6));
   if (a <= 0) return;
-  const rise = (1 - smooth((t - 14.85) / 0.7)) * 14;
+  const rise = (1 - smooth((t - 15.6) / 0.7)) * 14;
   ctx.save(); ctx.globalAlpha = a; ctx.textAlign = "center";
   ctx.shadowColor = "rgba(40,16,30,0.8)"; ctx.shadowBlur = 30;
   ctx.font = "600 200px Cormorant";
@@ -484,13 +484,13 @@ function endCard(t) {
 function draw(t) {
   drawPaintings(t);
   const w = (i) => weight(i, t);
-  if (t < 4.7) overS01(t, w(0) * (t > 3.9 ? 1 - smooth((t - 3.9) / 0.6) : 1));
+  if (t < 5.4) overS01(t, w(0) * (t > 4.55 ? 1 - smooth((t - 4.55) / 0.6) : 1));
   if (w(1) > 0) overS02(t, w(1));
   if (w(2) > 0) overS03(t, w(2));
   if (w(3) > 0) overS04(t, w(3));
   if (w(4) > 0) overS05(t, w(4));
   joins(t);
-  motes(t, 0.5 + 0.4 * smooth((t - 34) / 4));
+  motes(t, 0.5 + 0.4 * smooth((t - 33.5) / 4));
   title(t); hrtType(t);
   // the finish: grain, then the vignette
   const f = Math.floor(t * FPS), g = seeded(1000 + f);

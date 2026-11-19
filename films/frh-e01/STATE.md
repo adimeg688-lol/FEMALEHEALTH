@@ -1,11 +1,10 @@
 # STATE · FRH E01 · Where Did I Go?
 
 - [x] Script: the client's approved pack (ref/pack/) is the contract; SCRIPT.md written from it.
-- [x] Voice: ElevenLabs "Amy" (eleven_multilingual_v2), 2 takes; take 01 chosen (40.96 s) → audio/FRH_E01_VO_take01.mp3, placed at 0.4 s in audio/voice.wav. Word times from ElevenLabs Scribe → audio/words.json.
-- [x] Captions: audio/lines.mjs (hand-cut lines) → audio/captions.json · audio/srt.mjs → out/FRH_E01_subtitles.srt
-- [x] Score: score.mjs → audio/music.wav · mix: node kit/mix.mjs --duration 45 --voice audio/voice.wav --music audio/music.wav --music-db -20 → audio/mix.wav (−16 LUFS, −1.5 dBTP). AUDIO FROZEN.
-- [x] film.js: same-frame check passes, 0.35 s a frame.
-- [x] Stills: pass 1, then one repaint (paper fragments, shard spread, end card). Caption boundaries checked with --at.
-- [x] Full capture (captioned): master 421 MB kept locally (out/master, not in git); delivery out/FRH_E01_captioned_14M.mp4 (14 Mbps, AAC 320k, 79.7 MB), verify passes.
-- [ ] Clean capture (echo '{"captions":false}' > variant.json) → out/FRH_E01_clean.mp4, then rm variant.json
-- [ ] verify both
+- [x] Voice v1 "Amy" (2 takes) → client did not like it; archived in audio/takes/amy.
+- [x] Voice v2 "Imogen" jv41DhCf464zw0TI7I1w (client's pick), eleven_multilingual_v2, 2 takes; take 01 (39.65 s) → audio/FRH_E01_VO_imogen_take01.mp3, placed at 0.4 s in audio/voice.wav. Word times from ElevenLabs Scribe (audio/takes/imogen/scribe-take01.json) → audio/words.json.
+- [x] Captions: audio/lines.mjs → audio/captions.json · audio/srt.mjs → out/FRH_E01_subtitles.srt
+- [x] Score retimed to the new cuts: score.mjs → audio/music.wav · mix: node kit/mix.mjs --duration 45 --voice audio/voice.wav --music audio/music.wav --music-db -16 → audio/mix.wav (−16 LUFS, −1.5 dBTP). AUDIO FROZEN.
+- [x] film.js retimed (cuts 4.7 · 11.0 · 23.45 · 33.95 · end card 41.6). Same-frame check passes, 0.39 s a frame. Stills read.
+- [ ] Full capture, captioned only (client: no clean version) → out/FRH_E01_captioned_14M.mp4 (master in out/master, not in git)
+- [ ] verify

@@ -80,17 +80,17 @@ function reverb(st, wet = 0.3) {
   return res;
 }
 
-// ── The arc, on the film's timeline (cuts at 4.05, 10.2, 23.05, 34.5; end card 42.2) ─────────
+// ── The arc, on the film's timeline (cuts at 4.7, 11.0, 23.45, 33.95; end card 41.6) ─────────
 const CHORDS = [
-  { s: 0.0, e: 4.6, pad: ["D3", "A3", "F4"], tones: ["D5", "A4", "F4", "E5"], gain: 0.55 },
-  { s: 4.0, e: 7.6, pad: ["Bb2", "F3", "D4", "A4"], tones: ["D5", "F5", "A4"], gain: 0.6 },
-  { s: 7.2, e: 10.8, pad: ["G2", "D3", "Bb3", "F4"], tones: ["Bb4", "D5", "F4"], gain: 0.6 },
-  { s: 10.2, e: 16.9, pad: ["F2", "C3", "A3", "E4"], tones: ["C5", "A4", "E5", "G4"], gain: 0.65 },
-  { s: 16.4, e: 23.5, pad: ["C3", "G3", "E4"], tones: ["G4", "E5", "C5"], gain: 0.65 },
-  { s: 23.0, e: 29.4, pad: ["G2", "D3", "F3", "Bb3"], tones: ["D5", "Bb4", "F4"], gain: 0.6 },
-  { s: 29.0, e: 34.9, pad: ["A2", "E3", "D4", "A3"], tones: ["E5", "A4", "D5"], gain: 0.62 },
-  { s: 34.4, e: 38.9, pad: ["Bb2", "F3", "D4", "A4"], tones: ["F5", "D5", "A4", "C5"], gain: 0.72 },
-  { s: 38.5, e: 45.0, pad: ["F2", "C3", "A3", "C4", "F4"], tones: ["A4", "C5", "F5"], gain: 0.78 },
+  { s: 0.0, e: 5.2, pad: ["D3", "A3", "F4"], tones: ["D5", "A4", "F4", "E5"], gain: 0.55 },
+  { s: 4.6, e: 8.2, pad: ["Bb2", "F3", "D4", "A4"], tones: ["D5", "F5", "A4"], gain: 0.6 },
+  { s: 7.8, e: 11.5, pad: ["G2", "D3", "Bb3", "F4"], tones: ["Bb4", "D5", "F4"], gain: 0.6 },
+  { s: 10.95, e: 17.6, pad: ["F2", "C3", "A3", "E4"], tones: ["C5", "A4", "E5", "G4"], gain: 0.65 },
+  { s: 17.1, e: 23.9, pad: ["C3", "G3", "E4"], tones: ["G4", "E5", "C5"], gain: 0.65 },
+  { s: 23.4, e: 30.0, pad: ["G2", "D3", "F3", "Bb3"], tones: ["D5", "Bb4", "F4"], gain: 0.6 },
+  { s: 29.6, e: 34.4, pad: ["A2", "E3", "D4", "A3"], tones: ["E5", "A4", "D5"], gain: 0.62 },
+  { s: 33.9, e: 38.1, pad: ["Bb2", "F3", "D4", "A4"], tones: ["F5", "D5", "A4", "C5"], gain: 0.72 },
+  { s: 37.7, e: 45.0, pad: ["F2", "C3", "A3", "C4", "F4"], tones: ["A4", "C5", "F5"], gain: 0.78 },
 ];
 const st = buf();
 CHORDS.forEach((c, k) => {
@@ -101,7 +101,7 @@ const r = seeded(42);
 let seed = 100;
 for (let k = 0; k < CHORDS.length; k++) {
   const c = CHORDS[k], next = CHORDS[k + 1];
-  const end = next ? next.s + 0.3 : 41.0;
+  const end = next ? next.s + 0.3 : 40.2;
   let t = c.s + 0.25 + (k === 0 ? 0.0 : 0.2);
   let j = 0;
   while (t < end - 0.3) {
@@ -112,7 +112,7 @@ for (let k = 0; k < CHORDS.length; k++) {
   }
 }
 // The last chord, let ring under the end card.
-for (const [nm, g] of [["F2", 0.25], ["C4", 0.3], ["F4", 0.33], ["A4", 0.3], ["C5", 0.26]]) add(st, piano(hz(nm), 3.4, 0.5, seed++), 41.55 + g * 0.08, g, 0);
+for (const [nm, g] of [["F2", 0.25], ["C4", 0.3], ["F4", 0.33], ["A4", 0.3], ["C5", 0.26]]) add(st, piano(hz(nm), 3.4, 0.5, seed++), 40.7 + g * 0.08, g, 0);
 
 const wet = reverb(st, 0.34);
 // Fade in over the first 0.15 s (no click) and out over the last 1.4 s.
