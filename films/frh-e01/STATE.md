@@ -6,5 +6,5 @@
 - [x] Captions: audio/lines.mjs → audio/captions.json · audio/srt.mjs → out/FRH_E01_subtitles.srt
 - [x] Score retimed to the new cuts: score.mjs → audio/music.wav · mix: node kit/mix.mjs --duration 45 --voice audio/voice.wav --music audio/music.wav --music-db -16 → audio/mix.wav (−16 LUFS, −1.5 dBTP). AUDIO FROZEN.
 - [x] film.js retimed (cuts 4.7 · 11.0 · 23.45 · 33.95 · end card 41.6). Same-frame check passes, 0.39 s a frame. Stills read.
-- [ ] Full capture, captioned only (client: no clean version) → out/FRH_E01_captioned_14M.mp4 (master in out/master, not in git)
-- [ ] verify
+- [x] Full capture, captioned only → out/FRH_E01_captioned_14M.mp4 (14 Mbps, AAC 320k, 79.7 MB; master in out/master, not in git)
+- [x] verify: all ok (1080x1920, 30 fps, 45.0 s, -16.0 LUFS, -1.5 dBTP)
