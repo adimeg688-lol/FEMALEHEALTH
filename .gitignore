@@ -5,3 +5,10 @@ films/*/out/review.prev/
 .claude/skills/fable-video-maker/kit/package*.json
 films/*/out/*.log
 films/*/audio/*.pre.wav
+films/*/out/master/
+films/*/out/film_send.mp4
+films/*/out/x264*
+films/*/variant.json
+films/*/out/film.mp4
+films/frh-e01/out/FRH_E01_captioned.mp4
+films/*/out/verify.json
